@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <!-- Finished layer -->
+    <RelativeLayout
+        android:id="@+id/vFinishedLayer"
+        android:background="#a0a0a0"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Actividad terminada"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <!-- End layer -->
+    <RelativeLayout
+        android:id="@+id/vEndLayer"
+        android:visibility="gone"
+        android:background="#880000"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Deslizar para terminar"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical|end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <!-- Start layer -->
+    <RelativeLayout
+        android:id="@+id/vStartLayer"
+        android:visibility="gone"
+        android:background="#008800"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Deslizar para iniciar"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</FrameLayout>
